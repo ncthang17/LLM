@@ -310,3 +310,96 @@ LLaMA (Large Language Model Meta AI) is a family of open-weight large language m
 ### 📚 Citation
 Meta AI (2023–2024). Meta LLaMA Model Family Reports.
 Access: https://github.com/meta-llama
+
+## 🧠 HyperCLOVA X THINK (NAVER AI)
+### 📖 Overview
+HyperCLOVA X THINK is a reasoning-specialized large language model developed by NAVER AI Lab, as part of the HyperCLOVA X family. It focuses on high-performance reasoning, particularly in Korean and English, and is capable of length-controllable, verifiable, and step-by-step thinking. THINK supports both text-only and multimodal (vision-language) versions and is designed for education, science, and multilingual applications.
+
+### 💡 Capabilities
+- Bilingual Reasoning: Fluent in Korean and English; excels in Korean STEM and CSAT benchmarks.
+
+- Length Control: Users can choose concise or detailed (step-by-step) responses via simple prompts.
+
+- Long-context understanding: Supports context lengths up to 128K tokens.
+
+- Multimodal vision-text model: THINK with Vision handles image-text reasoning tasks.
+
+- Tool use support: THINK supports tool calling for agentic tasks (similar to APIs).
+
+- RLVR (Reinforcement Learning with Verifiable Rewards): New alignment method using deterministic reward signals for truthfulness, conciseness, and reasoning quality.
+
+### ✅ Strengths
+- 🇰🇷 Sovereign AI for Korea: SOTA performance on Korean-specific benchmarks (e.g., KCSAT STEM).
+- 🧠 Reasoning performance: Outperforms GPT-4.1 on Korean CSAT STEM vision-language benchmark.
+- 🧾 Concise vs. step-by-step outputs: Controlled via prompt; good for exams or summaries.
+- 📊 Efficiency: Outperforms larger models while using fewer training GPU hours.
+- 👁️ Vision-language integration: Includes a powerful visual reasoning version (THINK with Vision).
+
+### ⚠️ Weaknesses & Limitations
+- 🌐 Multilingual limitations: Strong in Korean/English, but not yet broadly multilingual like GPT-4 or LLaMA 3.1.
+
+- 💬 Model availability: Full weights are not publicly released yet; only a pruned open version is planned.
+
+- ⚙️ Ecosystem adoption: Smaller global developer ecosystem compared to Meta or OpenAI.
+
+- 🧪 Benchmarks localized: Some evaluations are unique to Korean academic and reasoning tasks.
+
+### 💼 Use Cases
+- STEM education & tutoring (especially for Korean students)
+
+- AI exam assistants for Korean CSAT or multilingual tasks
+
+- Vision-language reasoning (e.g., interpreting graphs, exam figures)
+
+- Public sector AI: Language-sovereign applications in Korea
+
+- Agentic assistants: Use in tools, automation, and long-term task planning
+
+### 📊 Performance Highlights
+|Task / Benchmark	|THINK Model Size	|Performance Note|
+|:-:|:-:|:-:|
+|KCSAT STEM Vision QA	|Not specified	|Outperformed GPT-4.1 by +9.4% (Vision tasks)|
+|GSM8K (Math Reasoning)	|128K tokens	|Competitive with global SOTA|
+|Commonsense Reasoning (EN)	|128K tokens	|High accuracy in multiturn logical questions|
+|Concise vs. Step-by-step	|Prompt control	|User-controllable response depth|
+|RLVR Alignment	|All sizes	|High stability and factuality improvements|
+
+### 🏗️ Architecture & Design
+- Transformer-based architecture (Auto-regressive decoder)
+
+- Tokenizer: Korean-optimized with multilingual support
+
+- Training:
+
+  - Pretraining on public Korean + English corpora
+  - Alignment via RLVR, enhancing factuality and verifiability
+  - Visual training with stage-wise curriculum for vision-language models
+
+### 🔒 License & Availability
+- Status: Full weights not released yet
+
+- Planned: A pruned & distilled open model under a business-friendly license (similar to LLaMA community license)
+
+- Access:
+  - THINK API via CLOVA Studio (NAVER)
+  - Open model release expected soon on Hugging Face or GitHub
+
+### 🧠 Innovations & Highlights
+- RLVR (Reinforcement Learning with Verifiable Rewards):
+  - Deterministic alignment reward function for:
+    - Truthfulness
+    - Conciseness
+    - Reasoning integrity
+
+- Vision-Language Stage Curriculum:
+  - Pretraining → reasoning alignment → multimodal alignment
+
+- Length-control prompting:
+  - Example: Add "Concise:" or "Step-by-step:" at the beginning of the prompt
+
+### 🌱 Efficiency
+  - Comparable performance to GPT-4.1 with fewer parameters and less training compute.
+  - Optimized for Korean infrastructure with green AI design focus.
+
+### 📚 Citation
+NAVER AI Lab (2025). HyperCLOVA X THINK Technical Report. [arXiv:2506.22403](https://arxiv.org/abs/2506.22403)
