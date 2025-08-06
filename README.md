@@ -164,7 +164,7 @@ EXAONE 4.0 is a next-generation unified large language model developed by LG AI 
   - Model modification & redistribution (with terms)
   - Publishing results
 
--Prohibited:
+- Prohibited:
   - Commercial use (apps, services, monetization)
   - Model competition without explicit permission
   - Reverse engineering or competing model development
@@ -257,57 +257,56 @@ LLaMA (Large Language Model Meta AI) is a family of open-weight large language m
 - 🧯 Still hallucinates: Prone to factual inaccuracies in absence of retrieval-based grounding.
 
 ### 📊 Benchmarks (LLaMA 2 & 3.1)
-MMLU (5-shot accuracy)
-Model	Size	Score (%)
-LLaMA 2	70B	~76
-LLaMA 3	70B	~83
-LLaMA 3.1	405B	87.3
+**MMLU (5-shot accuracy)**
+|Model	|Size	|Score (%)|
+|:-:|:-:|:-:|
+|LLaMA 2	|70B	|~76|
+|LLaMA 3	|70B	|~83|
+|LLaMA 3.1	|405B	|87.3|
 
-HumanEval (0-shot code pass@1)
-Model	Size	Score (%)
-LLaMA 2	13B	~33
-LLaMA 3	70B	~82
-LLaMA 3.1	405B	89.0
+**HumanEval (0-shot code pass@1)**
+|Model	|Size	|Score (%)|
+|:-:|:-:|:-:|
+|LLaMA 2	|13B	|~33|
+|LLaMA 3	|70B	|~82|
+|LLaMA 3.1	|405B	|89.0|
 
-🔐 License
-LLaMA 1: Research use only
+### 🔐 License
+- LLaMA 1: Research use only
 
-LLaMA 2 & 3: Meta LLaMA Community License
+- LLaMA 2 & 3: Meta LLaMA Community License
 
-✅ Commercial use allowed with conditions
+  - ✅ Commercial use allowed with conditions
+  - ❌ Not allowed for creating competing foundation models
+  - ❌ Redistribution only with license compliance
 
-❌ Not allowed for creating competing foundation models
+- [License Link (GitHub)](https://github.com/meta-llama/llama-models/blob/main/LICENSE)
 
-❌ Redistribution only with license compliance
+### 🧰 Use Cases
+|Area	|Applications|
+|:-:|:-:|
+|Research	|NLP modeling, transfer learning, prompt engineering|
+|Assistants	|Customer support bots, tutors, productivity apps|
+|Coding	|Pair programming, debugging, documentation generation|
+|Enterprise NLP	|Document classification, summarization, RAG systems|
+|Education	|Language learning, STEM explanation, test prep|
 
-License Link (GitHub)
+### 🌱 Efficiency & Emissions
+- Meta used H100 GPUs for LLaMA 3.1 training with 39.3M GPU hours.
 
-🧰 Use Cases
-Area	Applications
-Research	NLP modeling, transfer learning, prompt engineering
-Assistants	Customer support bots, tutors, productivity apps
-Coding	Pair programming, debugging, documentation generation
-Enterprise NLP	Document classification, summarization, RAG systems
-Education	Language learning, STEM explanation, test prep
+- Estimated location-based GHG emissions: 11,390 tons CO₂eq.
 
-🌱 Efficiency & Emissions
-Meta used H100 GPUs for LLaMA 3.1 training with 39.3M GPU hours.
+- But market-based GHG emissions: 0 tons CO₂eq, due to 100% renewable energy.
 
-Estimated location-based GHG emissions: 11,390 tons CO₂eq.
+### 🧠 Community Ecosystem
+- LLaMA models power many open projects: OpenChat, Nous Hermes, Zephyr, etc.
 
-But market-based GHG emissions: 0 tons CO₂eq, due to 100% renewable energy.
+- Fully integrated with:
 
-🧠 Community Ecosystem
-LLaMA models power many open projects: OpenChat, Nous Hermes, Zephyr, etc.
+  - 🧪 Hugging Face Transformers
+  - ⚡ llama.cpp (quantized inference)
+  - 🧱 LangChain, OpenDevin, AutoGen, and other LLM agent frameworks
 
-Fully integrated with:
-
-🧪 Hugging Face Transformers
-
-⚡ llama.cpp (quantized inference)
-
-🧱 LangChain, OpenDevin, AutoGen, and other LLM agent frameworks
-
-📚 Citation
+### 📚 Citation
 Meta AI (2023–2024). Meta LLaMA Model Family Reports.
 Access: https://github.com/meta-llama
