@@ -1,4 +1,23 @@
 # LLM Report Summary
+## 🤖 LLM Comparison Table
+
+| Feature | GPT-4 | EXAONE 4.0 | Meta LLaMA (3.1) | HyperCLOVA | HyperCLOVA X THINK |
+|:--------:|:--------:|:--------------:|:--------------------:|:--------------:|:--------------------:|
+| **Developer** | OpenAI | LG AI Research | Meta AI | NAVER CLOVA | NAVER AI Lab |
+| **Release Year** | 2023 | 2025 | 2023–2024 | 2021–2023 | 2025 |
+| **Model Sizes** | Undisclosed | 1.2B, 32B | 8B, 70B, 405B | 13B–204B | Not disclosed |
+| **Multimodal** | ✅ (text + image) | ✅ (Vision Model) | ❌ (text-only) | ❌ | ✅ (Vision support) |
+| **Multilingual** | ✅ (24+ langs) | ✅ (KO, EN, ES) | ✅ (8 langs) | ✅ (KO, EN, JA) | ✅ (KO, EN) |
+| **Context Length** | 8K–128K | Up to 128K | 128K | Not stated | 128K |
+| **Reasoning Strength** | High (MMLU: 86.4) | High (MMLU-Redux: 92.3) | Very High (MMLU: 87.3) | Moderate | Very High (KCSAT +9.4% vs GPT-4.1) |
+| **Tool Use / API** | ✅ | ✅ | ✅ | Limited | ✅ |
+| **Code Support** | ✅ (67%) | ✅ | ✅ (89%) | Some | ✅ |
+| **Vision Support** | ✅ | ✅ | ❌ | ❌ | ✅ |
+| **License** | Proprietary | Non-commercial | Community License | Commercial API | Planned open (pruned) |
+| **Use Cases** | Education, coding, business writing, vision tasks | STEM tutoring, coding, agent use | Multilingual agents, research, assistants | Korean chatbots, search + generation | Korean CSAT agents, visual STEM QA |
+| **Strengths** | Multimodal, strong alignment, few-shot | Bilingual, reasoning, tool use | Open, multilingual, efficient | Korean-native, RAG via Cue | Reasoning, vision-text, length control |
+| **Limitations** | Closed, hallucination risk | Non-commercial, training contamination risk | Text-only, 8-languages, license limits | Language-limited, closed | Korean focus, smaller ecosystem |
+
 ## 📌 GPT-4: Technical Summary
 ### 📖 Overview
 GPT-4 is a large multimodal model developed by OpenAI that can process both text and image inputs and generate text outputs. It demonstrates human-level performance on a variety of professional and academic tasks, significantly surpassing its predecessor GPT-3.5 in accuracy, reasoning, and language understanding. The architecture is based on the Transformer model and trained using next-token prediction, followed by Reinforcement Learning from Human Feedback (RLHF).
