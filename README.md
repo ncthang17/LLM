@@ -196,3 +196,118 @@ EXAONE 4.0 is a next-generation unified large language model developed by LG AI 
 
 ### 📚 Citation
 LG AI Research (2025). EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and Reasoning Modes. [arXiv:2507.11407v1](https://arxiv.org/abs/2507.11407)
+## 📌 Meta LLaMA
+### 📖 Overview
+LLaMA (Large Language Model Meta AI) is a family of open-weight large language models developed by Meta AI. LLaMA is designed to democratize access to powerful foundation models, with a strong emphasis on transparency, efficiency, multilingual support, and open research. Meta has released three major iterations so far: LLaMA 1 (2023), LLaMA 2 (July 2023), and LLaMA 3 / 3.1 (April & July 2024).
+
+### 🧠 Model Evolution
+|Version	|Release Date	|Sizes (B)	|Key Features|
+|:-:|:-:|:-:|:-:|
+|LLaMA 1	|Feb 2023	|7B, 13B, 33B, 65B	|Academic release, strong performance at small scale|
+|LLaMA 2	|July 2023	|7B, 13B, 70B	|Open commercial use, improved alignment|
+|LLaMA 3	|April 2024	|8B, 70B	|Instruction-tuned, long context, better CoT|
+|LLaMA 3.1	|July 2024	|8B, 70B, 405B	|Multilingual support, tool use, 128K context|
+
+### 🔧 Architecture & Design
+- Type: Auto-regressive, decoder-only transformer
+- Attention Mechanism: Switched from standard attention to Grouped Query Attention (GQA) for faster inference in LLaMA 3+
+- Context Length:
+  - LLaMA 1 & 2: ~4K to 32K tokens
+  - LLaMA 3.x: 128K tokens
+
+- Tokenizer: Custom sentencepiece-based tokenizer (token count varies slightly across versions)
+
+- Training Data: Publicly available and licensed data (no Meta user data)
+  - LLaMA 3/3.1 trained on over 15 trillion tokens
+  - Fine-tuning with 25M+ synthetic instructions in 3.1
+
+### 💡 Capabilities Across the LLaMA Family
+- 🧾 Text Generation: High-quality coherent text in multiple languages.
+
+- 🧠 Instruction Following: Strong alignment via RLHF (LLaMA 2+) and preference optimization.
+
+- 💻 Code Generation: Effective in Python and multiple languages, improved across releases.
+
+- 📚 Multilingual Tasks: LLaMA 3.1 supports 8 major languages, with potential for others.
+
+- 🧰 Tool Use & Agents: Built-in support for function calling and structured tool APIs (3.1).
+
+- 📏 Long-context understanding: From 32K in LLaMA 2 to 128K in 3.1, great for document QA and agents.
+
+### ✅ Strengths
+- 📖 Open-weight: Available for research and commercial use (under license).
+
+- 🧪 Efficient: Smaller models (8B, 13B) outperform much larger models (e.g., GPT-3) on several tasks.
+
+- 🌍 Multilingual: LLaMA 3.1 supports English, Spanish, French, German, Italian, Portuguese, Hindi, and Thai.
+
+- 🛠️ Developer-friendly: Works with Hugging Face, llama.cpp, and other open frameworks.
+
+- 🧠 Reasoning: Supports Chain-of-Thought prompting and high performance in benchmarks like MMLU and GSM-8K.
+
+- 🔧 Tool compatibility: Supports tool use pipelines, prompt templates, and inference acceleration.
+
+### ❌ Weaknesses
+- 🔒 Not permissively licensed: Community License limits certain types of use (e.g., foundation for competing models).
+
+- 🌐 Language limitations: Only 8 languages officially supported in LLaMA 3.1.
+
+- 📸 No vision input: Unlike GPT-4 or EXAONE, LLaMA is text-only.
+
+- 🧯 Still hallucinates: Prone to factual inaccuracies in absence of retrieval-based grounding.
+
+### 📊 Benchmarks (LLaMA 2 & 3.1)
+MMLU (5-shot accuracy)
+Model	Size	Score (%)
+LLaMA 2	70B	~76
+LLaMA 3	70B	~83
+LLaMA 3.1	405B	87.3
+
+HumanEval (0-shot code pass@1)
+Model	Size	Score (%)
+LLaMA 2	13B	~33
+LLaMA 3	70B	~82
+LLaMA 3.1	405B	89.0
+
+🔐 License
+LLaMA 1: Research use only
+
+LLaMA 2 & 3: Meta LLaMA Community License
+
+✅ Commercial use allowed with conditions
+
+❌ Not allowed for creating competing foundation models
+
+❌ Redistribution only with license compliance
+
+License Link (GitHub)
+
+🧰 Use Cases
+Area	Applications
+Research	NLP modeling, transfer learning, prompt engineering
+Assistants	Customer support bots, tutors, productivity apps
+Coding	Pair programming, debugging, documentation generation
+Enterprise NLP	Document classification, summarization, RAG systems
+Education	Language learning, STEM explanation, test prep
+
+🌱 Efficiency & Emissions
+Meta used H100 GPUs for LLaMA 3.1 training with 39.3M GPU hours.
+
+Estimated location-based GHG emissions: 11,390 tons CO₂eq.
+
+But market-based GHG emissions: 0 tons CO₂eq, due to 100% renewable energy.
+
+🧠 Community Ecosystem
+LLaMA models power many open projects: OpenChat, Nous Hermes, Zephyr, etc.
+
+Fully integrated with:
+
+🧪 Hugging Face Transformers
+
+⚡ llama.cpp (quantized inference)
+
+🧱 LangChain, OpenDevin, AutoGen, and other LLM agent frameworks
+
+📚 Citation
+Meta AI (2023–2024). Meta LLaMA Model Family Reports.
+Access: https://github.com/meta-llama
