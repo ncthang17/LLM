@@ -5,7 +5,7 @@
 |:--------:|:--------:|:--------------:|:--------------------:|:--------------------:|
 | **Developer** | OpenAI | LG AI Research | Meta AI | NAVER AI Lab |
 | **Release Year** | 2023 | 2025 | 2023–2024 | 2025 |
-| **Model Sizes** | Undisclosed | 1.2B, 32B | 8B, 70B, 405B | disclosed |
+| **Model Sizes** | Undisclosed | 1.2B, 32B | 8B, 70B, 405B | Undisclosed |
 | **Multimodal** | ✅ (text + image) | ✅ (Vision Model) | ❌ (text-only) | ✅ (Vision support) |
 | **Multilingual** | ✅ (24+ langs) | ✅ (KO, EN, ES) | ✅ (8 langs) | ✅ (KO, EN) |
 | **Context Length** | 8K–128K | Up to 128K | 128K | 128K |
@@ -275,21 +275,6 @@ LLaMA (Large Language Model Meta AI) is a family of open-weight large language m
 
 - 🧯 Still hallucinates: Prone to factual inaccuracies in absence of retrieval-based grounding.
 
-### 📊 Benchmarks (LLaMA 2 & 3.1)
-**MMLU (5-shot accuracy)**
-|Model	|Size	|Score (%)|
-|:-:|:-:|:-:|
-|LLaMA 2	|70B	|~76|
-|LLaMA 3	|70B	|~83|
-|LLaMA 3.1	|405B	|87.3|
-
-**HumanEval (0-shot code pass@1)**
-|Model	|Size	|Score (%)|
-|:-:|:-:|:-:|
-|LLaMA 2	|13B	|~33|
-|LLaMA 3	|70B	|~82|
-|LLaMA 3.1	|405B	|89.0|
-
 ### 🔐 License
 - LLaMA 1: Research use only
 
@@ -377,7 +362,7 @@ HyperCLOVA X THINK is a reasoning-specialized large language model developed by 
 ### 📊 Performance Highlights
 |Task / Benchmark	|THINK Model Size	|Performance Note|
 |:-:|:-:|:-:|
-|KCSAT STEM Vision QA	|Not specified	|Outperformed GPT-4.1 by +9.4% (Vision tasks)|
+|KCSAT STEM Vision QA	|Not specified	|Outperformed GPT-4.1 (Vision tasks)|
 |GSM8K (Math Reasoning)	|128K tokens	|Competitive with global SOTA|
 |Commonsense Reasoning (EN)	|128K tokens	|High accuracy in multiturn logical questions|
 |Concise vs. Step-by-step	|Prompt control	|User-controllable response depth|
