@@ -5,11 +5,11 @@
 |:--------:|:--------:|:--------------:|:--------------------:|:--------------------:|
 | **Developer** | OpenAI | LG AI Research | Meta AI | NAVER AI Lab |
 | **Release Year** | 2023 | 2025 | 2023–2024 | 2025 |
-| **Model Sizes** | Undisclosed | 1.2B, 32B | 8B, 70B, 405B | Not disclosed |
+| **Model Sizes** | Undisclosed | 1.2B, 32B | 8B, 70B, 405B | disclosed |
 | **Multimodal** | ✅ (text + image) | ✅ (Vision Model) | ❌ (text-only) | ✅ (Vision support) |
 | **Multilingual** | ✅ (24+ langs) | ✅ (KO, EN, ES) | ✅ (8 langs) | ✅ (KO, EN) |
 | **Context Length** | 8K–128K | Up to 128K | 128K | 128K |
-| **Reasoning Strength** | High (MMLU: 86.4) | High (MMLU-Redux: 92.3) | Very High (MMLU: 87.3) | Very High (KCSAT +9.4% vs GPT-4.1) |
+| **Reasoning Strength** | High (MMLU: 86.4) | High (MMLU-Redux: 92.3) | High (MMLU: 87.3) | High (KCSAT: 46.4 vs GPT-4.1: 40.3) |
 | **Tool Use / API** | ✅ | ✅ | ✅ | ✅ |
 | **Code Support** | ✅ (67%) | ✅ | ✅ (89%) | ✅ |
 | **Vision Support** | ✅ | ✅ | ❌ | ✅ |
