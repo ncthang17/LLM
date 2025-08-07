@@ -40,7 +40,7 @@ GPT-4 is a large multimodal model developed by OpenAI that can process both text
 - Visual Reasoning: Demonstrates strong understanding of images with text (e.g., humor detection in comic-style images).
 
 ### ✅ Strengths
-- High factuality: 19% improvement in internal factuality evals over GPT-3.5.
+- High factuality: 19pp improvement in internal factuality evals over GPT-3.5.
 
 - Safety improvements: Stronger refusals for harmful prompts (e.g., bomb-making, drug synthesis).
 
@@ -193,14 +193,14 @@ EXAONE 4.0 is a next-generation unified large language model developed by LG AI 
 ### 📊 Benchmarks Summary
 |Benchmark|	EXAONE 4.0 (32B)|	Compared Models|
 |:-:|:-:|:-:|
-|MMLU-REDUX |92.3	|GPT-4.1: 93.4|
+|MMLU-REDUX |92.3	|DeepSeek-R1: 93.4|
 |GPQA-DIAMOND (expert)	|75.4	|Qwen-235B: 71.1|
 |AIME 2025 (math)	|85.3	|DeepSeek-R1: 87.5|
-|LiveCodeBench V6 (code)	|66.7	|Qwen-235B: 70.3|
+|LiveCodeBench V6 (code)	|66.7	|DeepSeek-R1: 70.3|
 |IFEVAL (instr. following)	|83.7	|Phi 4: 84.9|
-|KMMLU-REDUX (Korean)	|72.7	|Llama 4: 77.0|
-|MMMLU (Spanish)	|85.6	|GPT-4.1: 88.2|
-|Tool use: BFCL-V3	|63.9	|DeepSeek-R1: 64.7|
+|KMMLU-REDUX (Korean)	|72.7	|DeepSeek-R1: 77.0|
+|MMMLU (Spanish)	|85.6	|DeepSeek-R1: 88.2|
+|Tool use: BFCL-V3	|63.9	|Qwen-235B: 70.8|
 
 *EXAONE performs similarly to or better than some frontier models, despite smaller size (32B vs. 235B/400B+)*
 
